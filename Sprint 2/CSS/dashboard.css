@@ -1,0 +1,100 @@
+body{
+    width:100%;
+    padding: 20px 5vw;
+}
+
+.add-product{
+    margin-top: 5%;
+    position: relative;
+    width: 100%;
+    height: 10rem;
+    background: var(--light-gray);
+    display: flex;
+    border-radius: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+}
+
+.text{
+    font-size: 2.5rem;
+    color: var(--main-yellow);
+}
+
+.add-product-btn{
+    display: inline-block;
+    border-radius: 1.5rem;
+    border: 2px solid #E1AF2D;
+    font-weight: bolder;
+    font-size: 1.8rem;
+    color: var(--main-yellow);
+    cursor: pointer;
+    padding: 1rem 3rem;
+    background-color: var(--dark-gray);
+}
+
+seller-products{
+    margin-top: 5%;
+}
+
+.product-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.product-card{
+    width: 100%;
+    height: 30rem;
+}
+
+.no-product{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    display: none;
+}
+
+.btn{
+    position: absolute;
+    z-index: 3;
+    top: 10px;
+    right: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background: var(--light-gray);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.product-card:hover .btn{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.open-btn{
+    top: 60px;
+}
+.delete-btn{
+    top: 110px;
+}
+
+.loader{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    z-index: 5;
+    display: none;
+}

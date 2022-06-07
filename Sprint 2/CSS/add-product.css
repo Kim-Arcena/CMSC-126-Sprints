@@ -1,0 +1,142 @@
+.body{
+    width: 100%;
+    padding: 5% 5vw;
+    display: flex;
+    gap: 10rem;
+}
+
+.loader{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    z-index: 5;
+    display: none;
+}
+
+.title{
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 4%;
+    font-weight: bold;
+    line-height: 5rem;
+    background: var(--darker-gray);
+    color: var(--white);
+}
+
+.error{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    min-height: 100px;
+    background: var(--white);
+    border-radius: 2rem;
+    padding: 2rem;
+    transition: 0.5s;
+    align-items: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    z-index: 9;
+    text-align: center;
+    text-transform:uppercase;
+    color: var(--error-red);
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+    border: 1px solid var(--error-red);
+    font-weight: bold;
+    opacity: 0;
+}
+
+.error.show{
+    opacity: 1;
+}
+
+.product-img{
+    background: var(--darker-gray);
+    width: 100%;
+}
+
+.image-upload-container{
+    width: 60%;
+    position: relative;
+    height: 600px;
+}
+
+.upload-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: var(--white);
+    font-size: 2.5rem;
+    opacity: 0;
+    transition: 0.5s;
+    border: 1px solid var(--main-yellow);
+}
+
+.upload-overlay:hover{
+    opacity: 1;
+}
+
+.product-detail{
+    width: 60%;
+    max-width: 60%;
+}
+
+.disable{
+    pointer-events: none;
+    filter: grayscale(1);
+}
+
+*[contenteditable="true"]{
+    outline: none;
+    border: 1px solid var(--white);
+    padding: 1rem;
+}
+
+*[contenteditable="true"]:hover{
+    border: 1px solid var(--main-yellow);
+}
+
+.des{
+    height: 500px;
+    overflow: scroll;
+    white-space: pre-wrap;
+}
+
+.tag-section{
+    padding: 30px 5vw;
+}
+
+.text{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    opacity: 0.5;
+}
+
+.tags{
+    height: 150px;
+    margin: 20px 0;
+}
+
+
+.btn-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.product-btn{
+    margin: 2rem;
+}

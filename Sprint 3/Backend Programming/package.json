@@ -1,0 +1,28 @@
+{
+  "name": "hypestreet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kim-Arcena/Hypestreet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kim-Arcena/Hypestreet/issues"
+  },
+  "homepage": "https://github.com/Kim-Arcena/Hypestreet#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1148.0",
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.1",
+    "express.js": "^1.0.0",
+    "firebase": "^9.8.2",
+    "nodemon": "^2.0.16"
+  }
+}

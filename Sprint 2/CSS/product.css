@@ -1,0 +1,166 @@
+/* product detail */
+.spec-product-section{
+    width: 100%;
+    padding: 5% 5vw;
+    display: flex;
+    gap: 10rem;
+}
+
+.spec-product-container{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    padding: 10rem;
+    border-radius: 5rem;
+    background-color: var(--container-gray);
+    box-shadow: 7px 7px 15px var(--shadow-gray);
+}
+
+.spec-product-image{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-detail{
+    margin: 0 5rem;
+}
+
+.product-title{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.product-des{
+    text-transform: capitalize;
+    margin: 30px 0;
+    opacity: 0.8;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: var(--white);
+}
+
+.ratings{
+    display: flex;
+}
+
+.ratings .star{
+    width: 3rem;
+    height: 3rem;
+    padding: 2px;
+}
+
+.rating-count{
+    opacity: 0.4;
+    font-size: 2.5rem;
+    margin-left: 1rem;
+    align-items: center;
+    color: var(--white);
+}
+
+.price{
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 2rem 0;
+    color: var(--main-yellow);
+}
+
+.product-btn{
+    border: 1px solid var(--main-yellow);
+    outline: none;
+    background-color: var(--dark-gray);
+    border-radius: 1.5rem;
+    padding: 1.5rem 2rem;
+    color: var(--main-yellow);
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 2.5rem 2rem  0 0;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px var(--shadow-gray);
+}
+
+
+
+/* Product Description Section */
+.detail-des, .review-section{
+    width: 100%;
+    padding: 20px 5vw 0;
+}
+
+.des{
+    white-space: pre-wrap;
+    line-height: 2rem;
+    font-size: 2rem;
+    color: var(--white);
+    opacity: 0.6;
+    text-indent: 5%;
+    text-align: justify;
+    padding: 5rem 0rem 3rem;
+}
+.detail-des .section-title{
+    margin-left: 46.5%;
+}
+
+/* Add Review Section */
+.add-review-section{
+    padding: 10rem 15rem 0;
+
+}
+
+.price{
+    color: var(--white);
+}
+
+.review-headline, .review-field{
+    overflow: hidden;
+    font-size: 18px;
+    width: 100%;
+    padding: 1.5rem;
+    margin:1.5rem 0;
+    background-color: var(--dark-gray);
+    border: .5px solid var(--main-yellow);
+    border-radius: 1rem;
+    color: var(--white);
+    
+}
+
+.review-headline:focus,
+.review-field:focus{
+    border: 2px solid var(--main-yellow);
+    box-shadow: 7px 7px 15px var(--shadow-gray);
+    color: var(--white);
+}
+
+.rating-text{
+    color: var(--main-yellow);
+    text-transform: uppercase;
+    margin: .5rem 0;
+    font-size: 2rem;
+}
+
+.star-container img{
+    cursor: pointer;
+    color: var(--main-yellow);
+    font-size: 2.5rem;
+}
+
+.rating-star{
+    width: 3rem;
+    height: 3rem;
+}
+
+.add-review-button{
+    border: 1px solid var(--main-yellow);
+    outline: none;
+    background-color: var(--dark-gray);
+    border-radius: 1.5rem;
+    padding: 1.5rem 2rem;
+    color: var(--main-yellow);
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 2.5rem;
+    cursor: pointer;
+}
